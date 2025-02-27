@@ -1,11 +1,29 @@
 # first list the packages you wish to download from PyPI
-teachbooks # depends on jupyter-book
-jupyterbook-patches
-sphinx-image-inverter
-download_link_replacer
+jupyter-book
+numpy
+scipy
+matplotlib
+pandas
+pylance
+ipympl
+plotly
+myst_nb
+dataclasses
+pybtex
+labels
+sphinxcontrib-bibtex
 sphinx-exercise
-sphinx-tudelft-theme
-teachbooks-sphinx-tippy
+jupyterquiz
+docutils==0.17.1     # This specific version of Docutils is required to avoid the empty brackets showing up in the "Bibliography"
+
+# added additionally 31 oktober 2024
+ipywidgets
+widgetsnbextension
+micropip
+dash
+dash_daq
+jupyterlab-widgets
+openpyxl
 
 # now list the packages (and the respective url) you wish to download from the GitLab package registry
 --extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple
