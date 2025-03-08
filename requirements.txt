@@ -1,4 +1,18 @@
 # first list the packages you wish to download from PyPI
+teachbooks # depends on jupyter-book
+jupyterbook-patches
+sphinx-image-inverter
+download_link_replacer
+sphinx-exercise
+sphinx-tudelft-theme
+teachbooks-sphinx-tippy
+sphinx-iframes
+
+# Now list the packages you want to download directly from GitHub
+git+https://github.com/TeachBooks/Sphinx-Thebe
+
+
+# first list the packages you wish to download from PyPI
 jupyter-book
 numpy
 scipy
@@ -27,4 +41,4 @@ openpyxl
 
 # now list the packages (and the respective url) you wish to download from the GitLab package registry
 --extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple
-sphinx-thebe ~= 0.9.9
+#sphinx-thebe ~= 0.9.9       <---- causes an error in deployment (somewhere in here a sphinx-thebe version already exists..

@@ -1,92 +1,61 @@
-# Jupyter Book Template
+# Your first open interactive textbook using the GitHub template
+
+> This page reuses CC BY 4.0 licensed content from https://github.com/TeachBooks/template.
+
+The template allows you to start your own open interactive textbook and hosting that textbook online without knowledge on Git, the Jupyter book package, python or anaconda. It doesn't elaborate on the collaborative functionalities of Git or how to edit the book. Please look at the TeachBooks manual (https://teachbooks.io/manual) to find more about that!
+
+## How to get started
+
+How to use the template is demonstrated in the figure below, all steps are elaborated on in the following step-by-step tutorial.
+
+![Demonstration for a public repository](https://github.com/TeachBooks/template_figures/blob/main/teachbooks-template.gif?raw=true)
+Video available [here](https://youtu.be/nN3Oi_MVvF0)
 
 
+1. To get started making your open interactive textbook with our functionalities, use the [TU Delft template](https://github.com/TUDelft-books/TUDelft-template) as template:
 
-## Getting started
+![Use template](https://github.com/TeachBooks/template_figures/blob/main/use_template.png?raw=true)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+2. Fill in a repository name, this name will be used in the future url of your book. If you're a member of the [TUDelft-books GitHub Organization](https://github.com/TUDelft-books) you can add your book directly to that organization to have it hosted on oit.tudelft.nl
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+![Create new repository](https://github.com/TeachBooks/template_figures/blob/main/create_new_repository.png?raw=true)
 
-## Add your files
+3. You can choose for `Private` only when you're a member of the [TUDelft-books GitHub Organization](https://github.com/TUDelft-books) and whenever that organization is one the TU Delft GitHub Enterprise account (which it's not yet at the moment). Otherwise, you won't be able to publish your open interactive textbook online. Furthermore, it prevents people from contributing to your book, making your book essentially 'closed' instead of 'open.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+4. (Only required for private repositories:) Create a Personal Access Token (classic) with at least the scopes `repo`, `read:org` and `gist` as described in the [github documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), and add this token with the name `GH_PAT` as a `Repository secret` or `Organization secret` (`Settings` > `Secrets and variables` > `Actions` > `Repository secrets` or `Organization secrets`).
 
-```
-cd existing_repo
-git remote add origin https://gitlab.tudelft.nl/interactivetextbooks-citg/jupyter-book-template.git
-git branch -M main
-git push -uf origin main
-```
+5. You need to activate GitHub pages so that your website is published to the internet. As long as you don't do this your open interactive textbook is not published online. Actually, now that you've taken this template our workflow tries to publish it to GitHub pages, which you didn't have the chance to activate yet. That's why you probably received an email with 'call-deploy-book: Some jobs were not successful' and you see the failed job under `Initial commit`. You can activate GitHub pages by setting the source for GitHub pages to GitHub Actions under `Settings` - `Pages` - `Build and deployment` - `Source` - `GitHub Actions`:
 
-## Integrate with your tools
+![Activate GitHub Pages](https://github.com/TeachBooks/template_figures/blob/main/set_up_pages.png?raw=true)
 
-- [ ] [Set up project integrations](https://gitlab.tudelft.nl/interactivetextbooks-citg/jupyter-book-template/-/settings/integrations)
+6. Make an edit to the open interactive textbook by editing and committing changes to one of the files in the `book/` subdirectory (available under `Code`).  Now checkout the progress of the publishing workflow under `Actions` - `All workflows` -  `call-deploy-book` -`<the most recent workflow run>`. Remember, the first commit which is there has failed because GitHub Pages wasn't activated at the time of `Initial commit`, you could also re-run that job if you don't want to make an edit. You can do so by running the workflow from `Actions` - `All workflows` - `call-deploy-book` - `Initial commit` - `Re-run all jobs` - `Re-run jobs`:
 
-## Collaborate with your team
+![Action](https://github.com/TeachBooks/template_figures/blob/main/action_re-run.jpeg?raw=true)
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+7. When the workflow has finished, visit your build book at `https://<username or organisation_name>.github.io/<repository_name>` (case sensitive). If you added it to the [TUDelft-books GitHub Organization](https://github.com/TUDelft-books) in step 2 it's on `https://oit.tudelft.nl/<repository_name>'. For our example it is [https://dummydocent.github.io/test_book_from_template/](https://dummydocent.github.io/test_book_from_template/) for the TeachBooks template repository and it's [https://oit.tudelft.nl/TUDelft-template/](https://oit.tudelft.nl/TUDelft-template/) for the TU Delft specific version of it. These links are visible in the action's summary as well, as shown in the figure of step 4.
 
-## Test and Deploy
+8. Want to get started directly? Your book contains a few exercises to get your started! Visit `https://<username or organiszation_name>.github.io/<repository_name>/exercises/exercises` or  `https://oit.tudelft.nl/<repository_name>/exercises/exercises' (case sensitive) to get started with the first ones to get the basics of how to interact with your book on GitHub.
 
-Use the built-in continuous integration in GitLab.
+![exercises](https://github.com/TeachBooks/template_figures/blob/main/exercises.png?raw=true)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Additional tip: 
+Set the repository website as your GitHub Pages website under `Code`- `About` - `Settings icon` - `Website` - `Use your GitHub Pages Website`
 
-***
+![GitHub pages as website](https://github.com/TeachBooks/template_figures/blob/main/use_github_pages_website.png?raw=true)
 
-# Editing this README
+## Features
+- A github repository structure for making a [Jupyter Book](https://github.com/executablebooks/jupyter-book) (`/book`)
+- An empty open interactive textbook containing an intro page on root, an example markdown page, an example jupyter notebook page, an example references page. and an example credits page. (`/book/_toc.yml`, `/book/_config.yml`, `/book/credits.md`, `/book/intro.md`, `/book/references.md`, `/book/some_content/overview.md`, `/book/some_content/text_and_code.ipynb`)
+- A file ready for adding references (`references.bib`, `/book/references.md`)
+- An example favicon (web browser icon) (`/book/figures/favicon.ico`, `book/_config.yml`.)
+- An example logo (`/book/figures/TUDelft_logo_rgb.png`, `/book/config.yml`)
+- The configuration files set ready to make your Jupyter Notebooks pages work with [live code using our sphinx-thebe extension](https://teachbooks.io/manual/features/live_code.html) and our recommended settings (`/book/config.yml`)
+- An example of setting up preprocessing your table of contents to hide certain draft chapters for eg. students (`_toc.yml`)
+- A file containing all the recommended software packages (`requirements.txt`)
+- A file containing the recommended license CC BY 4.0 (`LICENSE.md`)
+- Our [GitHub workflow for publishing your open interactive textbook to GitHub Pages](https://github.com/TeachBooks/deploy-book-workflow) (`.github/workflow/call-deploy-book.yml`)
+- A gitignore file containing standard python filetype to ignore (`.gitignore`)
+- A readme containing information how to use the template, which can adjusted after using the template (`README.md`)
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Contribute
+This tool's repository is stored on [GitHub](https://github.com/TeachBooks/template). The [TU-Delft specific version of it](https://github.com/TUDelft-books/TUDelft-template) is a fork of it within the [TUDelft-books GitHub Organization](https://github.com/TUDelft-books). The `README.md` of the branch `manual_description` is also part of the [TeachBooks manual](https://teachbooks.io/manual/external/template/README.html) as a submodule. If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/template) or the [TU-Delft specific repository](https://github.com/TUDelft-books/TUDelft-template) . To update the `README.md` shown in the TeachBooks manual, create a fork and open a merge request for the [GitHub repository of the manual](https://github.com/TeachBooks/manual). If you intent to clone the manual including its submodules, clone using: `git clone --recurse-submodulesgit@github.com:TeachBooks/manual.git`.
