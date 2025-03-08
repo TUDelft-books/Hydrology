@@ -3,15 +3,11 @@ name: call-deploy-book
 on:
   push:
     branches:
-    - '**'
-    # If your git repository has the Jupyter Book within some-subfolder next to
-    # unrelated files, you can make this run only if a file within that specific
-    # folder (or the workflow file itself) has been modified.
-    #
+      - '**'
     paths:
-    - book/**
-    - requirements.txt
-    - .github/workflows/call-deploy-book.yml
+      - book/**
+      - requirements.txt
+      - .github/workflows/call-deploy-book.yml
   workflow_dispatch:
 
 jobs: 
@@ -23,4 +19,21 @@ jobs:
       pages: write
       id-token: write
 
+  add-nojekyll:
+    needs: call-workflow  # Ensures this runs AFTER the main deploy job
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Add .nojekyll to prevent GitHub Pages from ignoring underscores
+        run: touch book/_build/html/.nojekyll
+
+      - name: Commit and push .nojekyll
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add book/_build/html/.nojekyll
+          git commit -m "Add .nojekyll to prevent Jekyll processing" || echo "No changes to commit"
+          git push
