@@ -1,0 +1,52 @@
+name: Deploy Jupyter Book
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "book/**"
+      - ".github/workflows/**"
+      - "requirements.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write # Grant write access for deployment
+
+jobs:
+  build-book:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build book
+        run: jupyter-book build book/
+
+      - name: Ensure lec_slides is included
+        run: |
+          if [ -d "book/lec_slides" ]; then
+            cp -r book/lec_slides book/_build/html/lec_slides;
+          fi
+
+      - name: Verify deployment files
+        run: ls -R book/_build/html/
+
+      - name: Add .nojekyll
+        run: touch book/_build/html/.nojekyll
+
+      - name: Deploy book
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: book/_build/html/
+          token: ${{ secrets.GITHUB_TOKEN }}  # Ensure we use the token
