@@ -1,73 +1,81 @@
-# ----------------------------------------------------
-# General Book Info
-# ----------------------------------------------------
+# General settings
 title: CiTG Jupyter Book template
 author: TU Delft
 logo: images/TUDelft_logo_rgb.png
 copyright: Delft University of Technology
 book_version: "1.0.0"
 
-# ----------------------------------------------------
-# Launch Buttons (Enable Thebe)
-# ----------------------------------------------------
+
+
+# Added additionally 31 october 2024:
 launch_buttons:
   thebe: true
-
-# ----------------------------------------------------
-# Notebook Execution Settings
-# ----------------------------------------------------
+############
 execute:
-  execute_notebooks: "auto"
-  include_output: true
-  include_widgets: true
+  include_output: true      # Include cell outputs in the build
+  include_widgets: true     # Include widget state in the HTML
   include_plotlyjs: true
+# to show plotly graphs obtained from: https://jupyterbook.org/en/stable/interactive/interactive.html
+sphinx:
+  config:
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js  
+    
+# Execute notebooks when building
+execute:
+  include:
+    - ipywidgets
+    - widgetsnbextension
+  execute_notebooks: "auto"
+  include_plotlyjs: true 
+  include_widgets: true     # Include widgets in the output 
 
-# ----------------------------------------------------
-# HTML / JS Settings
-# ----------------------------------------------------
+# START DRAFT
 html:
+# Add custom scripts if needed
   scripts:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
-    - https://cdn.plot.ly/plotly-latest.min.js
+    - https://cdn.plot.ly/plotly-latest.min.js  # Ensure Plotly JS is included
+   
   comments:
     hypothesis: true
-
-# ----------------------------------------------------
-# Sphinx Settings
-# ----------------------------------------------------
+# END DRAFT
+  
 sphinx:
+
   extensions:
     - jupyter_sphinx
     - nbsphinx
     - sphinx_togglebutton
     - sphinx_copybutton
     - sphinx.ext.mathjax
+  local_extensions:
+    apastyle: _ext/
+    bracket_citation_style: _ext/
+  extra_extensions:
     - sphinx_exercise
   config:
     jupyter_sphinx_require_url: true
     bibtex_reference_style: author_year_round
     bibtex_default_style: myapastyle
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    
+    # Added additionally 31 october 2024:
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    - https://cdn.plot.ly/plotly-latest.min.js
+      
     thebe_config:
       use_thebe_lite: true
-
-# ----------------------------------------------------
-# Bibliography
-# ----------------------------------------------------
-bibtex_bibfiles:
+      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
+    ####################  
+bibtex_bibfiles: 
   - references.bib
 
-# ----------------------------------------------------
-# MyST Parser Settings
-# ----------------------------------------------------
-parse:
-  myst_enable_extensions:
-    - amsmath
-    - dollarmath
-  myst_allow_unknown_directives: true
-
-# ----------------------------------------------------
-# Jupyter Widget Support
-# ----------------------------------------------------
+# to ensure jupyter is able to render interactivity correctly (like ipywidgets, matplotlib, etc)
 jupyter:
   jupyter_widgets: true
+
+  
+
+    
