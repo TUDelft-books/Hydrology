@@ -44,17 +44,10 @@ sphinx:
     - sphinx.ext.mathjax
     - sphinx_exercise
   config:
-    # Ensures interactive cells can fetch JS properly
     jupyter_sphinx_require_url: true
-
-    # Bibliography styling
     bibtex_reference_style: author_year_round
     bibtex_default_style: myapastyle
-
-    # Use MathJax 3 for LaTeX rendering
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-    # Thebe config
     thebe_config:
       use_thebe_lite: true
 
@@ -65,12 +58,13 @@ bibtex_bibfiles:
   - references.bib
 
 # ----------------------------------------------------
-# MyST Parser (for extended Markdown + LaTeX)
+# MyST Parser Settings
 # ----------------------------------------------------
 parse:
   myst_enable_extensions:
     - amsmath
     - dollarmath
+  myst_allow_unknown_directives: true
 
 # ----------------------------------------------------
 # Jupyter Widget Support
