@@ -24,11 +24,10 @@ myst_nb
 dataclasses
 pybtex
 labels
-Sphinx>=5.0
 sphinxcontrib-bibtex
 sphinx-exercise
 jupyterquiz
-docutils>=0.20     # This specific version of Docutils is required to avoid the empty brackets showing up in the "Bibliography"
+docutils==0.17.1     # This specific version of Docutils is required to avoid the empty brackets showing up in the "Bibliography"
 
 # added additionally 31 oktober 2024
 ipywidgets
