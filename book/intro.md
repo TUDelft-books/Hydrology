@@ -1,5 +1,5 @@
 # Home
-***Book version: v{{ "1.0.0" }}***
+***Book version: 2025***
 
 Welcome to the hydrology textbook! We are thrilled to guide you through the essential principles, concepts, and applications of hydrology within the pages of this textbook. Whether you're an experienced researcher, an inquisitive learner, or new to the field, this textbook is designed to be your trusted companion in unraveling the intricate dynamics of water on our planet.
 
