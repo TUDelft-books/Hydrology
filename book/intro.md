@@ -51,7 +51,4 @@ Hydrology is the study of the water cycle in diverse landscapes. Engineer hydrol
 ``` 
 
 ## Authors
-For the list of authors and contributors see [About us](https://teachbooks.tudelft.nl/engineering-hydrology/About_us.html). 
-
-## Other
-To access the link to general teachbooks in Gitlab [Click me!](https://gitlab.tudelft.nl/interactivetextbooks-citg/engineering-hydrology)
+For the list of authors and contributors see [About us](https://teachbooks.tudelft.nl/engineering-hydrology/About_us.html).
