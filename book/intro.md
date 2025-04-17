@@ -47,7 +47,7 @@ width: 1100px
 align: center
 name: fig:home
 ---
-Hydrology is the study of the water cycle in diverse landscapes. Engineer hydrology deals with the quantification and management of water resources and civil engineering infrastructure such as dams and reservoirs – Photo by {cite:p}`hommmey`.
+Hydrology is the study of the water cycle in diverse landscapes. Engineering hydrology deals with the quantification and management of water resources and civil engineering infrastructure such as dams and reservoirs – Photo by {cite:p}`hommmey`.
 
 ``` 
 
