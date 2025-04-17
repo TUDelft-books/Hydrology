@@ -1,5 +1,7 @@
 # Home
-***Book version: 2025***
+
+***Book version: Develop version for teachers only***
+
 
 Welcome to the hydrology textbook! We are thrilled to guide you through the essential principles, concepts, and applications of hydrology within the pages of this textbook. Whether you're an experienced researcher, an inquisitive learner, or new to the field, this textbook is designed to be your trusted companion in unraveling the intricate dynamics of water on our planet.
 
@@ -45,12 +47,9 @@ width: 1100px
 align: center
 name: fig:home
 ---
-Hydrology is the study of the water cycle in diverse landscapes. Engineer hydrology deals with the quantification and management of water resources and civil engineering infrastructure such as dams and reservoirs – Photo by {cite:p}`hommmey`.
+Hydrology is the study of the water cycle in diverse landscapes. Engineering hydrology deals with the quantification and management of water resources and civil engineering infrastructure such as dams and reservoirs – Photo by {cite:p}`hommmey`.
 
 ``` 
 
 ## Authors
-For the list of authors and contributors see [About us](https://teachbooks.tudelft.nl/engineering-hydrology/About_us.html). 
-
-## Other
-To access the link to general teachbooks in Gitlab [Click me!](https://gitlab.tudelft.nl/interactivetextbooks-citg/engineering-hydrology)
+For the list of authors and contributors see [About us](https://teachbooks.tudelft.nl/engineering-hydrology/About_us.html).

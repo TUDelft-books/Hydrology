@@ -5,44 +5,26 @@ logo: images/TUDelft_logo_rgb.png
 copyright: Delft University of Technology
 book_version: "1.0.0"
 
+# Enable MyST extensions (including dollar math for inline math expressions)
+myst_enable_extensions:
+  - dollarmath
 
-
-# Added additionally 31 october 2024:
+# Launch buttons
 launch_buttons:
   thebe: true
-############
-execute:
-  include_output: true      # Include cell outputs in the build
-  include_widgets: true     # Include widget state in the HTML
-  include_plotlyjs: true
-# to show plotly graphs obtained from: https://jupyterbook.org/en/stable/interactive/interactive.html
-sphinx:
-  config:
-    html_js_files:
-    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js  
-    
+
 # Execute notebooks when building
 execute:
+  include_output: true      # Include cell outputs in the build
+  include_widgets: true       # Include widget state in the HTML
+  include_plotlyjs: true
   include:
     - ipywidgets
     - widgetsnbextension
   execute_notebooks: "auto"
-  include_plotlyjs: true 
-  include_widgets: true     # Include widgets in the output 
 
-# START DRAFT
-html:
-# Add custom scripts if needed
-  scripts:
-    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
-    - https://cdn.plot.ly/plotly-latest.min.js  # Ensure Plotly JS is included
-   
-  comments:
-    hypothesis: true
-# END DRAFT
-  
+# Sphinx configuration
 sphinx:
-
   extensions:
     - jupyter_sphinx
     - nbsphinx
@@ -59,23 +41,25 @@ sphinx:
     bibtex_reference_style: author_year_round
     bibtex_default_style: myapastyle
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    
-    # Added additionally 31 october 2024:
     html_js_files:
-    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
-    - https://cdn.plot.ly/plotly-latest.min.js
-      
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+      - https://cdn.plot.ly/plotly-latest.min.js
     thebe_config:
       use_thebe_lite: true
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
-    ####################  
+
+# HTML configuration
+html:
+  scripts:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    - https://cdn.plot.ly/plotly-latest.min.js  # Ensure Plotly JS is included
+  comments:
+    hypothesis: true
+
+# BibTeX bibliography files
 bibtex_bibfiles: 
   - references.bib
 
-# to ensure jupyter is able to render interactivity correctly (like ipywidgets, matplotlib, etc)
+# Jupyter configuration for interactive output (like ipywidgets, matplotlib, etc)
 jupyter:
   jupyter_widgets: true
-
-  
-
-    
