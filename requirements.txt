@@ -37,7 +37,3 @@ dash
 dash_daq
 jupyterlab-widgets
 openpyxl
-
-# now list the packages (and the respective url) you wish to download from the GitLab package registry
---extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple
-#sphinx-thebe ~= 0.9.9       <---- causes an error in deployment (somewhere in here a sphinx-thebe version already exists..
