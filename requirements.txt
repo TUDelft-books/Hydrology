@@ -38,7 +38,6 @@ dash
 dash_daq
 jupyterlab-widgets
 openpyxl
-<<<<<<< HEAD
 kaleido
 
 # now list the packages (and the respective url) you wish to download from the GitLab package registry
