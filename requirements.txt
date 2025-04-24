@@ -6,6 +6,7 @@ download_link_replacer
 sphinx-tudelft-theme
 teachbooks-sphinx-tippy
 sphinx-iframes
+kaleido
 
 # Now list the packages you want to download directly from GitHub
 git+https://github.com/TeachBooks/Sphinx-Thebe
