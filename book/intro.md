@@ -2,7 +2,6 @@
 
 ***Book version: Develop version for teachers only***
 
-
 Welcome to the hydrology textbook! We are thrilled to guide you through the essential principles, concepts, and applications of hydrology within the pages of this textbook. Whether you're an experienced researcher, an inquisitive learner, or new to the field, this textbook is designed to be your trusted companion in unraveling the intricate dynamics of water on our planet.
 
 ***How to find what you are looking for in the book*** <br>
