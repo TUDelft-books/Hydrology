@@ -1,4 +1,6 @@
-# Some specific tips and tricks for the developers of this book
+# Some specific tips and tricks for the developers of this Hydrology book
+
+## branches
 In https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit one can find the settings of which branches to build
 Currently:
 
@@ -7,6 +9,9 @@ main -  develop/draft branch
 2025 - branch to which we re-direct for students
 
 Any other branch will not be build
+
+## offline book
+https://github.com/TUDelft-books/Hydrology/actions/ - click latest workflow run, go to artifacts and download 
 
 
 **********************************************************************************
