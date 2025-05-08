@@ -1,4 +1,17 @@
-# Your first open interactive textbook using the GitHub template
+# Some specific tips and tricks for the developers of this book
+In https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit one can find the settings of which branches to build
+Currently:
+
+test* - used for testing specific things before merging
+main -  develop/draft branch
+2025 - branch to which we re-direct for students
+
+Any other branch will not be build
+
+
+**********************************************************************************
+
+# Below is the information from the Teachbooks GitHub template
 
 > This page reuses CC BY 4.0 licensed content from https://github.com/TeachBooks/template.
 
