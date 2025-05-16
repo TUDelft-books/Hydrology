@@ -1,17 +1,17 @@
 # Some specific tips and tricks for the developers of this Hydrology book
 
 ## branches
-In https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit one can find the settings of which branches to build
+In [https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit](https://github.com/TUDelft-books/Hydrology/settings/variables/actions) one can find the settings of which branches to build
 Currently:
 
 test* - used for testing specific things before merging
 main -  develop/draft branch
 2025 - branch to which we re-direct for students
 
-Any other branch will not be build
+Any other branch will not be deployed. If no test branch exists this will result in a failure (build failed), but if main and 2025 have been released correctly this is not a problem.
 
 ## offline book
-https://github.com/TUDelft-books/Hydrology/actions/ - click latest workflow run, go to artifacts and download 
+https://github.com/TUDelft-books/Hydrology/actions/ - click latest workflow run, go to artifacts and download.
 
 
 **********************************************************************************
