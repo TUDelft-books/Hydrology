@@ -1,7 +1,7 @@
 # Some specific tips and tricks for the developers of this Hydrology book
 
 ## branches
-In https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit one can find the settings of which branches to build
+In [https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit](https://github.com/TUDelft-books/Hydrology/settings/variables/actions) one can find the settings of which branches to build
 Currently:
 
 test* - used for testing specific things before merging
