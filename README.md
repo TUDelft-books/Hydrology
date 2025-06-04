@@ -4,11 +4,14 @@
 In [https://github.com/TUDelft-books/Hydrology/settings/environments/5729562228/edit](https://github.com/TUDelft-books/Hydrology/settings/variables/actions) one can find the settings of which branches to build
 Currently:
 
-test* - used for testing specific things before merging
+test* - used for testing specific things before merging (turned off for now, to avoid to many apparent failures)
 main -  develop/draft branch
 2025 - branch to which we re-direct for students
 
 Any other branch will not be deployed. If no test branch exists this will result in a failure (build failed), but if main and 2025 have been released correctly this is not a problem.
+
+## publishing
+When changes have been satisfactorily made in main (i.e., our develop version) it can be merged into 2025, however, this process is cumbersome. The smoothest way is actually to remove 2025 for a second, create a new branch 2025 based on main, create a commit on 2025 to change the version to 2025 and your done.
 
 ## offline book
 https://github.com/TUDelft-books/Hydrology/actions/ - click latest workflow run, go to artifacts and download.
