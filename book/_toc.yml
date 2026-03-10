@@ -10,21 +10,21 @@ chapters:
   - file: introduction/water_usage.ipynb
   - file: introduction/examples.ipynb
 
-- file: hydrological cycle/nomenclature.ipynb
+- file: hydrological_cycle/nomenclature.ipynb
   sections:
-  - file: hydrological cycle/components and processes.ipynb
-  - file: hydrological cycle/water balance.ipynb
-  - file: hydrological cycle/models.ipynb
-  - file: hydrological cycle/reservoirs.ipynb
-  - file: hydrological cycle/hydr_cycle_exercises.ipynb
+  - file: hydrological_cycle/components_and_processes.ipynb
+  - file: hydrological_cycle/water balance.ipynb
+  - file: hydrological_cycle/models.ipynb
+  - file: hydrological_cycle/reservoirs.ipynb
+  - file: hydrological_cycle/hydro_cycle_exercises.ipynb
 
-- file: hydrologie van Nederland/nomenclature.ipynb
+- file: hydrologie_van_Nederland/nomenclature.ipynb
   sections:
-  - file: hydrologie van Nederland/geology.ipynb
-  - file: hydrologie van Nederland/neerslagenverdamping.ipynb
-  - file: hydrologie van Nederland/oppervlaktewater.ipynb
-  - file: hydrologie van Nederland/groundwater.ipynb
-  - file: hydrologie van Nederland/north_seas_and_floods.ipynb
+  - file: hydrologie_van_Nederland/geology.ipynb
+  - file: hydrologie_van_Nederland/neerslagenverdamping.ipynb
+  - file: hydrologie_van_Nederland/oppervlaktewater.ipynb
+  - file: hydrologie_van_Nederland/groundwater.ipynb
+  - file: hydrologie_van_Nederland/north_seas_and_floods.ipynb
 
 - file: precipitation/nomenclature.ipynb
   sections:
