@@ -40,7 +40,7 @@ View Your Highlights Later:
 2. Log in to Hypothesis, revisit the same book page (with the sidebar open) or view them via your Profile in your Hypothesis Dashboard.
 
 
-```{figure} images/home_hydrology.png
+```{figure} images/home/home_hydrology.png
 ---
 width: 1100px
 align: center
