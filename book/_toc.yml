@@ -3,72 +3,72 @@ root: intro
 options:
   numbered: 4
 chapters:
-- file: introduction/nomenclature.ipynb
+- file: 01_introduction/0_nomenclature.ipynb
   sections:
-  - file: introduction/what_is_hydrology.ipynb
-  - file: introduction/watercycle.ipynb
-  - file: introduction/water_usage.ipynb
-  - file: introduction/examples.ipynb
+  - file: 01_introduction/1_what_is_hydrology.ipynb
+  - file: 01_introduction/2_watercycle.ipynb
+  - file: 01_introduction/3_water_usage.ipynb
+  - file: 01_introduction/4_examples.ipynb
 
-- file: hydrological cycle/nomenclature.ipynb
+- file: 02_hydrological_cycle/0_nomenclature.ipynb
   sections:
-  - file: hydrological cycle/components and processes.ipynb
-  - file: hydrological cycle/water balance.ipynb
-  - file: hydrological cycle/models.ipynb
-  - file: hydrological cycle/reservoirs.ipynb
-  - file: hydrological cycle/hydr_cycle_exercises.ipynb
+  - file: 02_hydrological_cycle/1_components_and_processes.ipynb
+  - file: 02_hydrological_cycle/2_water_balance.ipynb
+  - file: 02_hydrological_cycle/3_models.ipynb
+  - file: 02_hydrological_cycle/4_reservoirs.ipynb
+  - file: 02_hydrological_cycle/5_hydro_cycle_exercises.ipynb
 
-- file: hydrologie van Nederland/nomenclature.ipynb
+- file: 03_hydrologie_van_Nederland/0_nomenclature.ipynb
   sections:
-  - file: hydrologie van Nederland/geology.ipynb
-  - file: hydrologie van Nederland/neerslagenverdamping.ipynb
-  - file: hydrologie van Nederland/oppervlaktewater.ipynb
-  - file: hydrologie van Nederland/groundwater.ipynb
-  - file: hydrologie van Nederland/north_seas_and_floods.ipynb
+  - file: 03_hydrologie_van_Nederland/1_geology.ipynb
+  - file: 03_hydrologie_van_Nederland/2_neerslagenverdamping.ipynb
+  - file: 03_hydrologie_van_Nederland/3_oppervlaktewater.ipynb
+  - file: 03_hydrologie_van_Nederland/4_groundwater.ipynb
+  - file: 03_hydrologie_van_Nederland/5_north_seas_and_floods.ipynb
 
-- file: precipitation/nomenclature.ipynb
+- file: 04_precipitation/0_nomenclature.ipynb
   sections:
-  - file: precipitation/precipitation_processes.ipynb
-  - file: precipitation/precipitation_measurements.ipynb
-  - file: precipitation/precipitation_calculation.ipynb
-  - file: precipitation/precipitation_exercises.ipynb
+  - file: 04_precipitation/1_precipitation_processes.ipynb
+  - file: 04_precipitation/2_precipitation_measurements.ipynb
+  - file: 04_precipitation/3_precipitation_calculation.ipynb
+  - file: 04_precipitation/4_precipitation_exercises.ipynb
 
-- file: evaporation/nomenclature.ipynb
+- file: 05_evaporation/0_nomenclature.ipynb
   sections:
-  - file: evaporation/evap_processes.ipynb
-  - file: evaporation/evap_measurements.ipynb
-  - file: evaporation/evap_calculation.ipynb
-  - file: evaporation/evap_exercises.ipynb
+  - file: 05_evaporation/1_evap_processes.ipynb
+  - file: 05_evaporation/2_evap_measurements.ipynb
+  - file: 05_evaporation/3_evap_calculation.ipynb
+  - file: 05_evaporation/4_evap_exercises.ipynb
 
-- file: groundwater/nomenclature.ipynb
+- file: 06_groundwater/0_nomenclature.ipynb
   sections:
-  - file: groundwater/groundwater_processes.ipynb
-  - file: groundwater/groundwater_measurements.ipynb
-  - file: groundwater/groundwater_calculation.ipynb
-  - file: groundwater/groundwater_exercises.ipynb
+  - file: 06_groundwater/1_groundwater_processes.ipynb
+  - file: 06_groundwater/2_groundwater_measurements.ipynb
+  - file: 06_groundwater/3_groundwater_calculation.ipynb
+  - file: 06_groundwater/4_groundwater_exercises.ipynb
 
-- file: rainfall_runoff/nomenclature.ipynb
+- file: 07_rainfall_runoff/0_nomenclature.ipynb
   sections:
-  - file: rainfall_runoff/runoff_processes.ipynb
-  - file: rainfall_runoff/runoff_measurements.ipynb
-  - file: rainfall_runoff/runoff_calculation.ipynb
-  - file: rainfall_runoff/runoff_exercises.ipynb
+  - file: 07_rainfall_runoff/1_runoff_processes.ipynb
+  - file: 07_rainfall_runoff/2_runoff_measurements.ipynb
+  - file: 07_rainfall_runoff/3_runoff_calculation.ipynb
+  - file: 07_rainfall_runoff/4_runoff_exercises.ipynb
 
-- file: urban_hydrology/urban_nomenclature.ipynb
+- file: 08_urban_hydrology/0_urban_nomenclature.ipynb
   sections:
-  - file: urban_hydrology/urban_processes.ipynb
-  - file: urban_hydrology/urban_monitoring.ipynb
-  - file: urban_hydrology/urban_modeling.ipynb
-  - file: urban_hydrology/urban_practice.ipynb
+  - file: 08_urban_hydrology/1_urban_processes.ipynb
+  - file: 08_urban_hydrology/2_urban_monitoring.ipynb
+  - file: 08_urban_hydrology/3_urban_modeling.ipynb
+  - file: 08_urban_hydrology/4_urban_practice.ipynb
 
-- file: Water_management/WM_introduction.ipynb
+- file: 09_water_management/0_WM_introduction.ipynb
   sections:
-  - file: Water_management/WM_humans.ipynb
-  - file: Water_management/WM_water_management.ipynb
-  - file: Water_management/WM_managers.ipynb
-  - file: Water_management/WM_politics.ipynb
-  - file: Water_management/WM_hydrologist.ipynb
-  - file: Water_management/WM_ethics.ipynb
+  - file: 09_water_management/1_WM_humans.ipynb
+  - file: 09_water_management/2_WM_water_management.ipynb
+  - file: 09_water_management/3_WM_managers.ipynb
+  - file: 09_water_management/4_WM_politics.ipynb
+  - file: 09_water_management/5_WM_hydrologist.ipynb
+  - file: 09_water_management/6_WM_ethics.ipynb
 
 - file: About_us.ipynb
 - file: bibliography.ipynb
