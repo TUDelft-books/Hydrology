@@ -59,7 +59,6 @@ chapters:
   - file: 08_urban_hydrology/1_urban_processes.ipynb
   - file: 08_urban_hydrology/2_urban_monitoring.ipynb
   - file: 08_urban_hydrology/3_urban_modeling.ipynb
-  - file: 08_urban_hydrology/4_urban_practice.ipynb
 
 - file: 09_water_management/0_WM_introduction.ipynb
   sections:
