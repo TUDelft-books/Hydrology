@@ -6,7 +6,7 @@ Currently:
 
 test* - used for testing specific things before merging (turned off for now, to avoid to many apparent failures)
 main -  develop/draft branch
-2025 - branch to which we re-direct for students
+2026 - branch to which we re-direct for students
 
 Any other branch will not be deployed. If no test branch exists this will result in a failure (build failed), but if main and 2025 have been released correctly this is not a problem.
 
